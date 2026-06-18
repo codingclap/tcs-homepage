@@ -1,6 +1,6 @@
 .homeBanner {
-    height: 100%;
-    min-height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
     background-image: url('../images/home-banner-3.png');
     background-size: cover;
     background-position: center;
