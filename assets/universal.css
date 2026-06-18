@@ -22,16 +22,12 @@ body {
   font-family: 'PlayfairDisplay-Italic';
   src: url('../fonts/playfairdisplay-italic.ttf');
   font-weight: 400;
-
 }
-
 @font-face {
   font-family: 'PlayfairDisplay-Medium';
   src: url('../fonts/PlayfairDisplay-Medium.ttf');
   font-weight: 500;
-
 }
-
 @font-face {
   font-family: 'HelveticaNowText-light';
   src: url('../fonts/HelveticaNowText-Light.ttf');
