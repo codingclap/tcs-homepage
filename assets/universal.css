@@ -20,10 +20,10 @@ body {
 
 @font-face {
   font-family: 'PlayfairDisplay-Italic';
-  src: url('../fonts/playfairdisplay-italic.ttf');
+  src: url('../fonts/PlayfairDisplay-Italic.ttf');
   font-weight: 400;
-
 }
+
 @font-face {
   font-family: 'PlayfairDisplay-Medium';
   src: url('../fonts/PlayfairDisplay-Medium.ttf');
