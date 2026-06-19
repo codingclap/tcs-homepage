@@ -145,3 +145,119 @@
 }
 
 /************************* Photography Section End *****************************/
+
+
+/************************* PhotographyService Section Start *****************************/
+.photographyService-Section {
+    overflow: hidden;
+    width: 100%;
+}
+
+.photographyService-Section .photographyTags {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.photographyService-Section .photographyTags div:nth-of-type(1) {
+    width: 140px;
+}
+
+.photographyService-Section .photographyTags div:nth-of-type(2) {
+    width: 140px;
+}
+
+.photographyService-Section .photographyButtons-container .photographyButtons {
+    width: 303px;
+    height: 63px;
+    line-height: 63px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid #EAE0D6;
+    font-size: clamp(22px, 2.3vw, 30px);
+}
+
+.photographyService-Section .photographyButtons-container .photographyButtons.active {
+    background: #EAE0D6;
+    color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+    .photographyService-Section .photographyButtons-container .photographyButtons {
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@media (max-width: 425px) {
+    .photographyService-Section .photographyButtons-container .photographyButtons {
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
+}
+
+.photographyService-Section .swiper-slide {
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+.photographyService-Section .swiper-slide img {
+    height: 480px;
+    border-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@media (max-width:1500px) {
+    .photographyService-Section .swiper-slide img {
+        height: 450px;
+        border: 1px solid #fff;
+    }
+}
+
+@media (max-width:991px) {
+    .photographyService-Section .swiper-slide img {
+        height: 380px;
+    }
+}
+
+@media (max-width:850px) {
+    .photographyService-Section .swiper-slide img {
+        height: 360px;
+    }
+}
+
+@media (max-width:768px) {
+    .photographyService-Section .swiper-slide img {
+        height: 350px;
+    }
+}
+
+@media (max-width:700px) {
+    .photographyService-Section .swiper-slide img {
+        height: 300px;
+    }
+}
+
+@media (max-width:530px) {
+    .photographyService-Section .swiper-slide img {
+        height: 280px;
+    }
+}
+
+@media (max-width:425px) {
+    .photographyService-Section .swiper-slide img {
+        height: 250px;
+    }
+}
+
+@media (max-width:375px) {
+    .photographyService-Section .swiper-slide img {
+        height: 200px;
+    }
+}
+
+/***************************** PhotographyService Section End *****************************/
