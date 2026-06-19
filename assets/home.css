@@ -20,7 +20,7 @@
 }
 
 .homeBanner .homeBanner-heading {
-    font-size: clamp(30px, 5vw, 70px);
+    font-size: clamp(35px, 5vw, 75px);
     font-style: normal;
     font-weight: 500;
     text-align: center;
@@ -89,24 +89,24 @@
 
 /***************************** Home Banner End *****************************/
 
-/***************************** Photography Section Start *****************************/
-.photography-section .labelHeading {
-    font-size: clamp(20px, 4vw, 50px);
+/***************************** Photography location Start *****************************/
+.photographyLocation-Section .labelHeading {
+    font-size: clamp(30px, 4vw, 50px);
     font-style: normal;
 }
 
-.photography-section .photographyHeading {
-    font-size: clamp(30px, 5vw, 70px);
+.photographyLocation-Section .photographyHeading {
+    font-size: clamp(35px, 5vw, 75px);
     font-style: normal;
     font-weight: 500;
 }
 
-.photography-section .locationHeading {
-    font-size: clamp(20px, 4vw, 50px);
+.photographyLocation-Section .locationHeading {
+    font-size: clamp(30px, 4vw, 50px);
     font-style: normal;
 }
 
-.photography-section .photographyLocation {
+.photographyLocation-Section .photographyLocation {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
@@ -114,7 +114,7 @@
     margin: 0 auto;
 }
 
-.photography-section .photographyLocation .location-card {
+.photographyLocation-Section .photographyLocation .location-card {
     position: relative;
     height: auto;
     overflow: hidden;
@@ -122,24 +122,24 @@
     animation: slideUpIn 0.8s ease-out both;
 }
 
-.photography-section .location-card .location-label {
+.photographyLocation-Section .location-card .location-label {
     font-size: clamp(18px, 2.5vw, 30px);
 }
 
 @media (max-width: 1053px) {
-    .photography-section .photographyLocation {
+    .photographyLocation-Section .photographyLocation {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
-    .photography-section .photographyLocation {
+    .photographyLocation-Section .photographyLocation {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 }
 
 @media (max-width: 425px) {
-    .photography-section .photographyLocation {
+    .photographyLocation-Section .photographyLocation {
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     }
 }
