@@ -578,7 +578,18 @@
                 </div>
             </div>
         </div>
+        <!--------- Arrows ------->
+        <div class="portfolio-nav d-flex justify-content-between px-4 px-md-5 mb-0">
+            <button class="portfolio-prev me-2">
+                <img src="images/portfolio-arrow-left.png" alt="prev">
+            </button>
+            <button class="portfolio-next">
+                <img src="images/portfolio-arrow-right.png" alt="next">
+            </button>
+        </div>
+        <!--------- Arrows ------->
 
+        <!--------- Slider ------->
         <div class="swiper ourPortfolio-slider w-100 text-center pt-4 pt-md-4 pt-lg-5 pb-3 pb-md-5 pb-lg-5">
             <div class="swiper-wrapper ps-0 pe-0">
 
@@ -632,9 +643,15 @@
 
             </div>
         </div>
-
+        <div class="portfolio-btn d-flex justify-content-end align-items-center text-center pe-3 pe-sm-4 pe-md-5 pe-lg-5">
+            <a href="https://thecinematicsocials.com/portfolio" class="pe-3"
+                data-font-style="PlayfairDisplay-Italic" data-color="white">View More</a>
+            <img class="portfolio-btn-arrow" src="images/portfolio-arrow-right.png" alt="next">
+        </div>
     </section>
     <!--===============================   Our Portfolio  ==============================-->
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -740,6 +757,10 @@
                     delay: 2000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
+                },
+                navigation: {
+                    prevEl: '.portfolio-prev',
+                    nextEl: '.portfolio-next',
                 },
                 grabCursor: false,
                 simulateTouch: false,
