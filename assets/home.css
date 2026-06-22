@@ -198,12 +198,39 @@
     }
 }
 
-.photographyService-Section .swiper-slide {
+.photographyService-Section .photographyservice-slider .swiper-slide {
     border: 1px solid #fff;
     border-radius: 25px;
+    position: relative;
 }
 
-.photographyService-Section .swiper-slide img {
+.photographyService-Section .photographyservice-slider .photographySlider-content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: +99;
+}
+
+.photographyService-Section .photographyservice-slider .photographySlider-content .photographySlider-heading {
+    font-size: clamp(28px, 4vw, 45px);
+    font-style: normal;
+}
+
+.photographyService-Section .photographyservice-slider .photographySlider-content span {
+    font-size: clamp(28px, 4vw, 45px);
+    font-style: normal;
+}
+
+.photographyService-Section .photographyservice-slider .photographySlider-content p {
+    font-size: clamp(14px, 1.2vw, 17px);
+    font-style: normal;
+
+}
+
+.photographyService-Section .photographyservice-slider .swiper-slide img {
     height: 480px;
     border-radius: 15px;
     width: 100%;
@@ -212,52 +239,276 @@
 }
 
 @media (max-width:1500px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 450px;
         border: 1px solid #fff;
     }
 }
 
 @media (max-width:991px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 380px;
     }
 }
 
 @media (max-width:850px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 360px;
     }
 }
 
 @media (max-width:768px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 350px;
     }
 }
 
 @media (max-width:700px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 300px;
     }
 }
 
 @media (max-width:530px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 280px;
     }
 }
 
 @media (max-width:425px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 250px;
     }
 }
 
 @media (max-width:375px) {
-    .photographyService-Section .swiper-slide img {
+    .photographyService-Section .photographyservice-slider .swiper-slide img {
         height: 200px;
     }
 }
 
 /***************************** PhotographyService Section End *****************************/
+
+
+
+/***************************** WhyChoose Section Start *****************************/
+.whyChooseUs-Section {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/whyChoose-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.whyChooseUs-Section .whyChooseUs-content .chooseUs-card {
+    box-sizing: border-box;
+    border: 1px solid #121010;
+    border-radius: 20px;
+    font-size: clamp(16px, 1.5vw, 20px);
+    min-height: 112px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .whyChooseUs-Section .whyChooseUs-content .chooseUs-card {
+        min-height: 100px;
+    }
+}
+
+/***************************** WhyChoose Section End *****************************/
+
+
+/***************************** Our Portfolio Section Start *****************************/
+
+.ourPortfolio-Section .ourPortfolioButtons-container .ourPortfolioButtons {
+    width: 303px;
+    height: 63px;
+    line-height: 63px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid #EAE0D6;
+    font-size: clamp(22px, 2.3vw, 30px);
+}
+
+.ourPortfolio-Section .ourPortfolioButtons-container .ourPortfolioButtons.active {
+    background: #EAE0D6;
+    color: #000;
+}
+
+.ourPortfolio-Section .ourPortfolio-slider {
+    height: 100%;
+    height: 600px;
+}
+
+.ourPortfolio-Section .ourPortfolio-slider .swiper-wrapper {
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+    height: 480px;
+    width: 100%;
+    opacity: 0.5;
+    transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.ourPortfolio-Section .ourPortfolio-slider .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+    height: 550px;
+    opacity: 1;
+    transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.404);
+    /* change color as needed */
+}
+
+@media (max-width: 1800px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 600px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 480px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 550px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 560px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 460px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 540px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 550px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 450px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 520px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 540px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 430px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 520px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 410px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 480px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 520px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 410px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 480px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 480px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 360px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 430px;
+    }
+
+    .ourPortfolio-Section .ourPortfolioButtons-container .ourPortfolioButtons {
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 450px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 340px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 410px;
+    }
+}
+@media (max-width: 500px) {
+    .ourPortfolio-Section .ourPortfolio-slider {
+        height: 420px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
+        height: 300px;
+    }
+
+    .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
+        height: 370px;
+    }
+}
+@media (max-width: 425px) {
+    .ourPortfolio-Section .ourPortfolioButtons-container .ourPortfolioButtons {
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+    }
+}
+
+/***************************** Our Portfolio Section End *****************************/

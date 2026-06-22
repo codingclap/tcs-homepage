@@ -17,7 +17,12 @@ body {
 [data-font-size="23px"] {
   font-size: clamp(18px, 2vw, 23px);
 }
-
+[data-font-size="30px"] {
+  font-size: clamp(22px, 2.3vw, 30px);
+}
+[data-font-size="28px"] {
+  font-size: clamp(20px, 2vw, 28px);
+}
 [data-font-size="75px"] {
   font-size: clamp(35px, 5vw, 75px);
 }
@@ -28,6 +33,11 @@ body {
 
 /********** Default Font *********/
 
+@font-face {
+  font-family: 'HelveticaNeue-Regular';
+  src: url('../fonts/HelveticaNeue.otf');
+  font-weight: 400;
+}
 
 @font-face {
   font-family: 'PlayfairDisplay-Regular';
@@ -81,6 +91,10 @@ body {
 
 
 /********** Font Family - Variable *********/
+ 
+[data-font-style="HelveticaNeue-Regular"] {
+  font-family: 'HelveticaNeue-Regular';
+}
 [data-font-style="PlayfairDisplay-Italic"] {
   font-family: 'PlayfairDisplay-Italic';
 }
@@ -120,6 +134,10 @@ body {
   background-color: #EAE0D6;
 }
 
+[data-bgcolor="lightBlack"] {
+  background-color: #121010;
+}
+
 [data-bgcolor="black"] {
   background-color: #1E1E1E;
 }
@@ -145,7 +163,9 @@ body {
 [data-color="black"] {
   color: #000000;
 }
-
+[data-color="lightBlack"] {
+  color: #121010;
+}
 [data-color="light"] {
   color: #EAE0D6;
 }
