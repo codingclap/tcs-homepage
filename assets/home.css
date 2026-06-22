@@ -215,12 +215,12 @@
 }
 
 .photographyService-Section .photographyservice-slider .photographySlider-content .photographySlider-heading {
-    font-size: clamp(28px, 4vw, 45px);
+    font-size: clamp(25px, 4vw, 45px);
     font-style: normal;
 }
 
 .photographyService-Section .photographyservice-slider .photographySlider-content span {
-    font-size: clamp(28px, 4vw, 45px);
+    font-size: clamp(25px, 4vw, 45px);
     font-style: normal;
 }
 
@@ -277,13 +277,13 @@
 
 @media (max-width:425px) {
     .photographyService-Section .photographyservice-slider .swiper-slide img {
-        height: 250px;
+        height: 300px;
     }
 }
 
 @media (max-width:375px) {
     .photographyService-Section .photographyservice-slider .swiper-slide img {
-        height: 200px;
+        height: 280px;
     }
 }
 
@@ -483,7 +483,7 @@
     }
 
     .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
-        height: 340px;
+        height: 370px;
     }
 
     .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
@@ -492,15 +492,15 @@
 }
 @media (max-width: 500px) {
     .ourPortfolio-Section .ourPortfolio-slider {
-        height: 420px;
+        height: 440px;
     }
 
     .ourPortfolio-Section .ourPortfolio-slider .swiper-slide {
-        height: 300px;
+        height: 340px;
     }
 
     .ourPortfolio-Section .ourPortfolio-slider .swiper-slide-active {
-        height: 370px;
+        height: 380px;
     }
 }
 @media (max-width: 425px) {
