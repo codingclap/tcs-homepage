@@ -720,3 +720,234 @@
 }
 
 /***************************** Worked Client - Testimonals *****************************/
+
+
+/***************************** Our Process *****************************/
+.ourProcess-Section {
+    background-color: #1E1E1E;
+}
+
+.ourProcess-Section .ourProcess-content {
+    width: 100%;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcess-one {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcess-two {
+    width: 100%;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    width: 100%;
+    max-width: 1140px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    width: 100%;
+    max-width: 1140px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box {
+    min-height: 170px;
+    background: #ffffff00;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    padding: 0px 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    width: 450px;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box {
+    min-height: 175px;
+    background: #f5f5f500;
+    margin-left: 100px;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    padding: 0px 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    width: 450px;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 11px;
+    height: 115px;
+    background: url("../images/timeline-topline.png") center/contain no-repeat;
+}
+
+.ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 11px;
+    height: 115px;
+    background: url("../images/timeline-bottomline.png") center/contain no-repeat;
+}
+
+@media (max-width: 1300px) {
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+        max-width: 1040px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+        max-width: 1005px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box {
+        min-height: 160px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box {
+        margin-left: 50px;
+        width: 420px;
+        min-height: 170px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+        max-width: 950px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+        max-width: 950px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box {
+        min-height: 140px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box {
+        margin-left: 50px;
+        width: 380px;
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+        max-width: 800px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+        max-width: 800px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box {
+        width: 350px;
+        min-height: 130px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box {
+        margin-left: 50px;
+        width: 350px;
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+        max-width: 700px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+        max-width: 700px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box {
+        width: 350px;
+        min-height: 130px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box {
+        margin-left: 0px;
+        width: 350px;
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ourProcess-Section .ourProcess-content .ourProcess-one {
+        border-bottom: 0px solid #fff;
+        padding-bottom: 15px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+        max-width: 700px;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+        max-width: 700px;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box {
+        width: auto;
+        min-height: 130px;
+        padding: 0px 0px 0px 30px;
+
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box {
+        margin-left: 0px;
+        width: auto;
+        min-height: 130px;
+        justify-content: start;
+        padding: 0px 0px 0px 30px;
+
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid .ourProcess-box::before {
+        width: 11px;
+        height: 150px;
+        background: url("../images/timeline-topline.png") center/contain no-repeat;
+        bottom: 0;
+        top: auto;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid .ourProcess-box::before {
+        width: 11px;
+        height: 150px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessOne-grid {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+    }
+
+    .ourProcess-Section .ourProcess-content .ourProcessTwo-grid {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+    }
+
+}
+
+/***************************** Our Process *****************************/
