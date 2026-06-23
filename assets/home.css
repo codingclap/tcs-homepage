@@ -537,3 +537,186 @@
 }
 
 /***************************** Our Portfolio Section End *****************************/
+
+/***************************** Our Trusted Client *****************************/
+
+.trustedBy-Section .trustedBy-marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.trustedBy-Section .trustedBy-marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: max-content;
+    will-change: transform;
+    /* keep this — helps GPU */
+}
+
+/* 6 logos visible at once on desktop */
+.trustedBy-Section .trustedBy-img {
+    height: 160px;
+    width: calc(100vw / 7);
+    object-fit: contain;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    flex-shrink: 0;
+    padding: 0 20px;
+}
+
+@media (max-width: 1300px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 5);
+        height: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 5);
+        height: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 5);
+        height: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 4);
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 4);
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 3);
+        height: 90px;
+    }
+}
+
+@media (max-width: 320px) {
+    .trustedBy-Section .trustedBy-img {
+        width: calc(100vw / 2);
+        height: 90px;
+    }
+}
+
+/***************************** Our Trusted Client *****************************/
+
+/***************************** Worked Client - Testimonals *****************************/
+.workedClient-Section .workedClient-slide {
+    min-height: 380px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.workedClient-Section .workedClient-content .workedClient-heading {
+    text-transform: uppercase;
+    font-size: clamp(16px, 1.2vw, 20px);
+}
+
+.workedClient-Section .workedClient-slider .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.workedClient-Section .workedClient-slider .swiper-slide-active {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.workedClient-Section .workedClient-content .p {
+    font-size: clamp(13px, 0.9vw, 15px);
+}
+
+.workedClient-Section .workedClient-content .workedClient-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workedClient-Section .workedClient-content .rating-heading {
+    font-size: clamp(12px, 0.9vw, 15px);
+    text-transform: uppercase;
+}
+
+.workedClient-Section .workedClient-content .rating-image {
+    width: 135px;
+    height: 100%;
+}
+
+.workedClient-Section .workedClient-content .workedClient-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.workedClient-Section .workedClient-content .workedClient-prev,
+.workedClient-Section .workedClient-content .workedClient-next {
+    width: 59px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.workedClient-Section .workedClient-content .workedClient-prev:hover,
+.workedClient-Section .workedClient-content .workedClient-next:hover {
+    transform: translateY(-2px);
+}
+
+.workedClient-Section .workedClient-content .workedClient-prev svg,
+.workedClient-Section .workedClient-content .workedClient-next svg {
+    width: 22px;
+    height: 22px;
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    .workedClient-Section .workedClient-slide {
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 991px) {
+    .workedClient-Section .workedClient-slide {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .workedClient-Section .workedClient-content .rating-image {
+        width: 110px;
+    }
+
+    .workedClient-Section .workedClient-slide {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .workedClient-Section .workedClient-content .rating-image {
+        width: 90px;
+    }
+}
+
+/***************************** Worked Client - Testimonals *****************************/
