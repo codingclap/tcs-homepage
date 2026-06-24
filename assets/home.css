@@ -723,9 +723,6 @@
 
 
 /***************************** Our Process *****************************/
-.ourProcess-Section {
-    background-color: #1E1E1E;
-}
 
 .ourProcess-Section .ourProcess-content {
     width: 100%;
@@ -951,3 +948,181 @@
 }
 
 /***************************** Our Process *****************************/
+
+/***************************** Our Blogs *****************************/
+
+
+/* ---- Tabs ---- */
+.ourBlogs-Section .ourBlogs-content .blog-tabs-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tabs-track {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex: 1;
+    padding: 4px 0;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tabs-track::-webkit-scrollbar {
+    display: none;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tab {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0.75rem;
+    width: 200px;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tab:hover {
+    border-color: white;
+    color: white;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tab.active {
+    background: white;
+    color: #0a0a0a;
+    border-color: white;
+    font-weight: 600;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tab-arrow {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tab-arrow:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ---- Cards Grid ---- */
+.ourBlogs-Section .ourBlogs-content .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card {
+    background: #f5f0e8;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #111;
+    transition: transform 0.3s ease;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card:hover {
+    transform: translateY(-4px);
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card-img {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card-body {
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card-desc {
+    font-size: 0.82rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-card-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 0.78rem;
+    color: #666;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 12px;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 767px) {
+    .ourBlogs-Section .ourBlogs-content .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ourBlogs-Section .ourBlogs-content .blog-card-img {
+        height: 200px;
+    }
+
+    .ourBlogs-Section .ourBlogs-content .blog-tab-arrow {
+        display: none;
+    }
+}
+
+/*------------ Blogs Scrollbar --------*/
+.ourBlogs-Section .ourBlogs-content .blog-tabs-track {
+    /* Firefox */
+    scrollbar-width: auto;
+    scrollbar-color: #65615D #272626;
+    padding: 0px 30px;
+    /* Chrome/Safari */
+    overflow-x: auto;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tabs-track::-webkit-scrollbar {
+    height: 6px;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tabs-track::-webkit-scrollbar-track {
+    background: #272626;
+    border-radius: 10px;
+}
+
+.ourBlogs-Section .ourBlogs-content .blog-tabs-track::-webkit-scrollbar-thumb {
+    background: #65615D;
+    border-radius: 10px;
+}
+
+/*------------ Blogs Scrollbar --------*/
+
+/***************************** Our Blogs *****************************/
