@@ -104,8 +104,7 @@ body {
 @font-face {
   font-family: 'HelveticaNowText-light';
   src: url('../fonts/HelveticaNowText-Light.ttf');
-  font-weight: 700;
-
+  font-weight: 700; 
 }
 
 @font-face {
@@ -131,8 +130,16 @@ body {
   src: url('../fonts/FamiljenGrotesk-SemiBold.ttf');
   font-weight: 600;
 }
-
-
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../fonts/Gotham-Medium.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/Gotham-Book.otf');
+  font-weight: 800;
+}
 /********** Font Family - Variable *********/
 
 [data-font-style="HelveticaNeue-Regular"] {
