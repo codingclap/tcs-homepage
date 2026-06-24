@@ -1134,7 +1134,7 @@
 }
 @media (max-width: 500px) {
     .ourBlogs-Section .ourBlogs-content .blog-card-body {
-        padding: 20px 20px;
+        padding:25px 20px 20px 20px;
     }   
 }
 /*------------ Blogs Scrollbar --------*/
